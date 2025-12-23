@@ -1,0 +1,46 @@
+{
+  "name": "@sport-tracker/feature-gym",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Gym tracking feature module for Sport Tracker.",
+  "keywords": [
+    "sport-tracker",
+    "gym",
+    "feature",
+    "pwa"
+  ],
+  "license": "MIT",
+  "author": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "@tracker/contracts": "^1.0.0",
+    "@tracker/plugin-sdk": "^1.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "tsup": "^8.0.1",
+    "typescript": "^5.4.5"
+  }
+}
